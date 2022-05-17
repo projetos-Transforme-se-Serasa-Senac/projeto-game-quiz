@@ -1,22 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body{
     padding: 0px;
     margin: 0px;
-    font-family: 'Koulen', cursive;
+    /*font-family: 'Koulen', cursive;*/
+    font-family: 'Oswald', sans-serif;
     text-align: center;
+    background: aliceblue;
 }
 .menu img{
-    width: 150px;
-    
+    width: 200px;
+    height: 81px;
+    padding: 0px;  
 }
 .menu{
     font-family: 'Koulen', cursive;
-    background: #156fc4;
-    padding: 2px;
+    background: #9975fa;
+    padding: 0px;
+    color: aliceblue; 
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    /*font-family: 'Koulen', cursive;*/
+    font-family: 'Oswald', sans-serif;
+    background: #9975fa;
+    padding: 40px;
+    text-align: left;
     color: aliceblue;
     margin: 0px;
 }
+
+.categorias{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px;
+    padding: 10px;
+}
+/*Rosa*/
+.categorias .rosa{
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #FF1493;
+    padding: 10px;
+    padding-left: 10px;
+    color: white;
+    background: #FF1493;
+}
+.categorias .rosa:hover{
+    box-shadow:3px 2px 5px  #FF1493;
+}
+
+/*Roxo*/
+.categorias .roxo{
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #8A2BE2;
+    padding: 10px;
+    color: white;
+    background: #8A2BE2;
+}
+.categorias .roxo:hover{
+    box-shadow:3px 2px 5px  #8A2BE2;
+}
+
+/*Azul*/
+.categorias .azul{
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #0000FF;
+    padding: 10px;
+    color: white;
+    background:#0000FF;
+}
+.categorias .azul:hover{
+    box-shadow:3px 2px 5px  #0000FF;
+}
+
+
+/*Amarelo*/
+.categorias .amarelo{
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #FFD700;
+    padding: 10px;
+    color: white;
+    background:#FFD700;
+}
+.categorias .amarelo:hover{
+    box-shadow:3px 2px 5px  #FFD700;
+} 
+
 
 /*CARDS*/
 /*.cards{
@@ -46,38 +122,36 @@ body{
     width: 1000px;
     position: relative;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-
-    
-
+    margin: 0 auto;
 }
 
 .container .card{
     position: relative;
     cursor: pointer;
-    margin: 10px;
+
+    
 }
 
-.container .card-quiz{
+.container .card .card-quiz{
     width: 300px;
     height: 200px;
     transition: 0.5s;
-    background: #333;
-
 }
 
 .container .card .card-quiz.card-quiz1{
     position: relative;
-    background: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    background: #156fc4;
 }
 
 .container .card:hover .card-quiz.card-quiz1{
-    background:#333;
+    background: #636af2;
     transform: translateY(0);
 }
 
@@ -90,9 +164,10 @@ body{
     opacity: 1;
 }
 
-.container .card .card-quiz.card-quiz1 .content img{
-    max-width: 100px;
+/*.container .card .card-quiz.card-quiz1 .content img{
+    max-width: 150px;
 }
+*/
 
 .container .card .card-quiz.card-quiz1 .content h3{
     margin: 10px 0 0;
@@ -137,24 +212,5 @@ body{
     background: #333;
     color: #fff;
 }
-/*BOTÕES*/
-button{
-    border: 1px solid #156fc4;
-    border-radius: 10px;
-    font-family: 'Koulen', cursive;
-
-
-}
 
 /*RODAPÉ*/
-.rodape{
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Koulen', cursive;
-    background: #156fc4;
-    padding: 40px;
-    text-align: left;
-    color: aliceblue;
-    margin: 0px;
-}
-
