@@ -1,3 +1,5 @@
+import Quiz from "./Quiz";
+
 const Jogos = (props) => {
 
     const alteraTela = props.alteraTela;
@@ -43,7 +45,7 @@ const Jogos = (props) => {
                 <image>{jogos.img}</image>
                 <p>{jogos.nome}</p>
                 <p>{jogos.desc}</p>
-                <button onClick={() => alteraTela()}>Jogar</button>
+                <button onClick={() => alteraTela(<Quiz alteraTela={alteraTela}/>)}>Jogar</button>
             </div>
          );
     })}
