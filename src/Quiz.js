@@ -26,7 +26,9 @@ const Quiz = (props) => {
                 correta: 0
             }
         ],
-        [],
+        [
+            
+        ],
         []
     ];
 
