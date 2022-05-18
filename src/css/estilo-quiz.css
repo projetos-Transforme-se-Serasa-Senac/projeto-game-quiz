@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+/*#D4ACE0*/
 body{
-    background: #BA55D3;
+
+    background-image: url("https://i.imgur.com/0f26KxN.jpg");
+    background-size: 2000px 970px ;
+    
     text-align: center;
 }
 /*Box*/
@@ -77,4 +81,7 @@ body{
 }
 .img{
 width: 50px;
+}
+.RespostaCerta{
+   background-color: #04D94F;  
 }

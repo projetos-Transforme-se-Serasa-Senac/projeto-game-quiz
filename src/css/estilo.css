@@ -36,16 +36,21 @@ body{
 .categorias{
     display: flex;
     justify-content:space-around;
-    margin: 20px;
-    padding: 10px;
+    margin-top: 00px;
+    padding: 30px;
+}
+.categorias button{
+    padding: 30px;
 }
 /*Rosa*/
 .categorias .rosa{
+    margin-top: 0px ;
     text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid #FF1493;
-    padding: 10px;
-    padding-left: 10px;
+    border: 2px solid #C71585;
+    padding: 9px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
     color: white;
     background: #FF1493;
 }
@@ -57,10 +62,14 @@ body{
 .categorias .roxo{
     text-decoration: none;
     border-radius: 10px;
-    border: 1px solid #8A2BE2;
+    border: 1px solid #9400D3;
     padding: 10px;
     color: white;
     background: #8A2BE2;
+    padding: 4px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
 }
 .categorias .roxo:hover{
     box-shadow:3px 2px 5px  #8A2BE2;
@@ -74,6 +83,10 @@ body{
     padding: 10px;
     color: white;
     background:#0000FF;
+    padding: 4px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
 }
 .categorias .azul:hover{
     box-shadow:3px 2px 5px  #0000FF;
@@ -88,6 +101,10 @@ body{
     padding: 10px;
     color: white;
     background:#FFD700;
+    padding: 4px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
 }
 .categorias .amarelo:hover{
     box-shadow:3px 2px 5px  #FFD700;
