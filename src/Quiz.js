@@ -193,14 +193,15 @@ const Quiz = (props) => {
         const resposta_correta = perguntaAtual.correta;
         if(resposta_correta == i){
             { localStorage.setItem("pontos", pontos+5 ) }
+            document.getElementById(i).classList.add("RespostaCerta")
             alteraPontos(pontos + 5)
         }
         
-        if(etapa + 1 < perguntas.length){
-            alteraEtapa(etapa + 1)
-        }else{
-            alteraTela(<Final alteraTela={alteraTela}/>)
-        }
+        // if(etapa + 1 < perguntas.length){
+        //     alteraEtapa(etapa + 1)
+        // }else{
+        //     alteraTela(<Final alteraTela={alteraTela}/>)
+        // }
     }
 
 
@@ -212,8 +213,13 @@ const Quiz = (props) => {
             <h1> {perguntaAtual.pergunta} </h1>
             <ul>
                 {
+<<<<<<< Updated upstream
                     perguntaAtual.respostas.map((resposta, i) => {
                         return <li onClick={() => verificaResposta(i)}> {resposta} </li>
+=======
+                    perguntas[etapa].respostas.map((resposta, i) => {
+                        return <li id={i} onClick={() => verificaResposta(i)}> {resposta} </li>
+>>>>>>> Stashed changes
                     })
                 }
             </ul>
