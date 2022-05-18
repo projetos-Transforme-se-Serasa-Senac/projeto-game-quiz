@@ -92,7 +92,29 @@ const Jogos = (props) => {
                     );
                 })}
                 </div>
+                <footer class="rodape">
+          
+                        <div>
+                            <strong>Desenvolvido por:</strong>
+                            <p>Giulia Maia</p>
+                            <p>Alice Silva</p>
+                            <p>Isabela Correia</p>
+                            <p>Esther Lira</p>
+                        </div>
+                        <div>
+                            <strong>Front-end:</strong>
+                            <p>Isabela Correia</p>
+                            <p>Esther Lira</p>
+                        </div>
+                        <div>
+                            <strong>Back-end:</strong>
+                            <p>Giulia Maia</p>
+                            <p>Alice Silva</p>
+                        </div>
+                            
+                </footer>
         </div>
+
 
     );
 
