@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Quiz from "./Quiz";
 
 const Jogos = (props) => {
@@ -37,18 +38,27 @@ const Jogos = (props) => {
   
     ];
 
+    /*const [idJogo, vaiParaJogo] = useState(null)*/
 
-    {jogos.map(jogos => {
-        return ( 
 
-            <div >
-                <image>{jogos.img}</image>
-                <p>{jogos.nome}</p>
-                <p>{jogos.desc}</p>
-                <button onClick={() => alteraTela(<Quiz alteraTela={alteraTela}/>)}>Jogar</button>
-            </div>
-         );
-    })}
+
+    return(
+
+        <div className="card">
+            {jogos.map(jogos => {
+                return ( 
+
+                    <div >
+                        <image>{jogos.img}</image>
+                        <p>{jogos.nome}</p>
+                        <p>{jogos.desc}</p>
+                        <button onClick={() => alteraTela(<Quiz alteraTela={alteraTela}/>)}>Jogar</button>
+                    </div>
+                );
+            })}
+        </div>
+
+    );
 
 }
  
