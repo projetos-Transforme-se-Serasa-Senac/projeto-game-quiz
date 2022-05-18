@@ -203,13 +203,13 @@ const Quiz = (props) => {
             document.getElementById(i).classList.remove("RespostaCerta")
             
 
-            if(etapa + 1 < perguntas.length){
+            if(etapa + 1 < perguntas[i].length){
                 alteraEtapa(etapa + 1)
             }else{
                 alteraTela(<Final alteraTela={alteraTela}/>)
             }
 
-        }, 1000);
+        }, 100);
 
     }
 
