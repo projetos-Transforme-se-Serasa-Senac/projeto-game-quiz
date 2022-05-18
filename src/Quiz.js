@@ -7,7 +7,7 @@ const Quiz = (props) => {
 
     const alteraTela = props.alteraTela
 
-    const escolhido = props.escolhido;
+    const jogoEscolhido = props.jogoEscolhido;
 
     const [ etapa, alteraEtapa] = useState(0)
 
@@ -129,9 +129,12 @@ const Quiz = (props) => {
 
     ];
 
-    const verificaResposta = (i) => {
+    const perguntaAtual = perguntas[jogoEscolhido][etapa]
 
-        const resposta_correta = perguntas[etapa].correta;
+    const verificaResposta = (i) => {
+        
+
+        const resposta_correta = perguntaAtual.correta;
         if(resposta_correta == i){
             { localStorage.setItem("pontos", pontos+5 ) }
             alteraPontos(pontos + 5)
@@ -144,15 +147,16 @@ const Quiz = (props) => {
         }
     }
 
+
     return ( 
         <div>
 
             <p> Você tem <strong> {pontos} </strong></p>
            
-            <h1> {perguntas[etapa].pergunta} </h1>
+            <h1> {perguntaAtual.pergunta} </h1>
             <ul>
                 {
-                    perguntas[etapa].respostas.map((resposta, i) => {
+                    perguntaAtual.respostas.map((resposta, i) => {
                         return <li onClick={() => verificaResposta(i)}> {resposta} </li>
                     })
                 }
