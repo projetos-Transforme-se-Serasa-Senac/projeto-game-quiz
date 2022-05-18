@@ -1,5 +1,4 @@
 import Jogos from "./Jogos";
-import Quiz from "./Quiz";
 
 const Final = (props) => {
 
