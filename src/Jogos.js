@@ -12,21 +12,21 @@ const Jogos = (props) => {
             id: 0,
             img: '#',
             nome: 'Crespúsculo',
-            desc: 'Bella Swan muda-se para a cidade de Forks e ao frequentar a nova escola, conhece o misterioso Edward Cullen que vira sua vida de cabeça para baixo e a muda completamente. Venha fazer esse quiz e descobrir o quanto você sabe sobre esse mundo de vampiros e lobisomens...'
+            desc: 'Faça esse quiz e descubra o quanto você sabe sobre o mundo de vampiros e lobisomens segundo a saga de filmes de Crepúsculo...'
 
         },
         {
             id: 1,
             img: '#',
             nome: 'O Mundo Sombrio de Sabrina',
-            desc: 'Bruxa e também mortal, a jovem Sabrina Spellman fica dividida entre a vida normal de adolescente e o legado de sua família feiticeira. Venha fazer esse quiz e descobrir o quanto você sabe sobre esse mundo de bruxas... '
+            desc: 'Faça esse quiz e descubra o quanto você sabe sobre o mundo de bruxas segunda a série O Mundo Sombrio de Sabrina... '
 
         },
         {
             id: 2,
             img: '#',
             nome: 'Lúcifer',
-            desc: 'Lucifer está entediado e infeliz como o Senhor do Inferno e decide tirar férias em Los Angeles, onde vira dono de uma casa noturna com ajuda de sua serva Mazikeen. Faça esse quiz e descubra o quanto você sabe do mundo dos anjos e demônios...'
+            desc: ' Faça esse quiz e descubra o quanto você sabe do mundo dos anjos e demônios segundo a série Lúcifer...'
 
         },
         {
@@ -47,7 +47,7 @@ const Jogos = (props) => {
             id: 5,
             img: '#',
             nome: 'Conhecimentos',
-            desc: 'Faça esse teste e descubra se está com seus conhecimentos em dia...'
+            desc: 'Faça esse teste e descubra se está com seus Conhecimentos em dia...'
 
         }
         
