@@ -125,6 +125,62 @@ const Quiz = (props) => {
                 respostas: ["Luta contra o Homem de Ferro" , "Em uma batalha de quando era jovem" , "Arranhão de um gato", "Caiu de um prédio quando criança"],
                 correta: 2
             }
+        ],
+
+        [
+            {
+                pergunta: "Com qual desses artistas a Anitta nunca teve um affair?",
+                respostas: ["Neymar" , "Zac Efron" ," Shawn Mendes" , "Maluma"],
+                correta: 2
+            },
+            {
+                pergunta: "Em qual ano rolou a polêmica entre Luísa Sonsa e Whindersson Nunes?",
+                respostas: ["2020" , "2021" , "2018" , "2019"],
+                correta: 0
+            },
+            {
+                pergunta: "Qual desse participantes do BB22 foi expulso por agressão?",
+                respostas: ["Eliezer" , "Natalia" , "Luciano" , "Maria"],
+                correta: 3
+            },
+            {
+                pergunta: "Qual foi o participante do BBB que teve o maior índice de rejeição ?",
+                respostas: ["Felipe Prior" , "Viih Tube" , "Karol Conka" , "Nego Di"],
+                correta: 2
+            },
+            {
+                pergunta: "Quantas traições de Arthur Aguiar foram confirmadas?",
+                respostas: ["17" , "13" , "14" , "16"],
+                correta: 3
+            } 
+        ],
+
+        [
+            {
+                pergunta: "No filme O Náufrago, qual é o nome dado pelo personagem à bola de vôlei que encontrou na ilha?",
+                respostas: ["Wilson" , "Johnny" , "Sally" , "Juliet"],
+                correta: 0
+            },
+            {
+                pergunta: "Qual a última vez que a Seleção Brasileira chegou a uma final de copa do mundo?",
+                respostas: [" 2002" , "2006" , "2010" , "2014"],
+                correta: 0
+            },
+            {
+                pergunta: "Qual destas doenças tem como sintomas Febre Hemorrágica?",
+                respostas: ["Febre Amarela" , "Todas alternativas" , "Leptospirose" , "Ebola"],
+                correta: 1
+            },
+            {
+                pergunta: " Qual animal simboliza o pecado?",
+                respostas: ["Gato" , "Serpente" , "Cachorro" , "Veado"],
+                correta: 1
+            },
+            {
+                pergunta: "Onde se localiza a cidade de Hollywood?",
+                respostas: ["Flórida" , "Texas" , "Califórnia" , "Los Angeles"],
+                correta: 2
+            } 
         ]
 
     ];
