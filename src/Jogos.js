@@ -3,6 +3,8 @@ import Quiz from "./Quiz";
 
 const Jogos = (props) => {
 
+    require('./css/estilo.css')
+
     const alteraTela = props.alteraTela;
 
     const jogos = [
@@ -58,18 +60,38 @@ const Jogos = (props) => {
 
     return(
 
-        <div className="card">
-            {jogos.map(jogos => {
-                return ( 
+        <div>
+            <div className="menu">
+                <img src="https://i.imgur.com/kcf4CxO.png" /> 
+            </div>
+            <div class="categorias">
+                <a href="url" class="rosa">Séries</a>
+                <a href="url" class="roxo">Filmes</a>
+                <a href="url" class="azul">Conhecimentos gerais</a>
+                <a href="url" class="amarelo">Fofocas</a>
+            </div>
+            <div className="container">
+        
+                {jogos.map(jogos => {
+                    return ( 
 
-                    <div >
-                        <image>{jogos.img}</image>
-                        <p>{jogos.nome}</p>
-                        <p>{jogos.desc}</p>
-                        <button onClick={() => alteraTela(<Quiz alteraTela={alteraTela} jogoEscolhido={jogos.id}/>)}>Jogar</button>
-                    </div>
-                );
-            })}
+                        <div className="card">
+                            <div className="card-quiz card-quiz1">
+                                <div className="content">
+                                    <img src={jogos.img}/>
+                                    <p>{jogos.nome}</p>
+                                </div>
+                            </div>
+                            <div className="card-quiz card-quiz2">
+                                <div className="content">
+                                    <p>{jogos.desc}</p>
+                                    <a onClick={() => alteraTela(<Quiz alteraTela={alteraTela} jogoEscolhido={jogos.id}/>)}>Jogar</a>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+                </div>
         </div>
 
     );
