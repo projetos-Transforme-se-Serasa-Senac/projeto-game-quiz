@@ -1,9 +1,13 @@
 import React, {useState} from 'react';
 
-
 import Final from "./Final";
 
+
 const Quiz = (props) => {
+
+    require('./css/estilo-quiz.css')
+
+    document.body.style.backgroundImage = 'url("https://i.imgur.com/0f26KxN.jpg")'
 
     const alteraTela = props.alteraTela
 
@@ -197,11 +201,18 @@ const Quiz = (props) => {
             alteraPontos(pontos + 5)
         }
         
-        // if(etapa + 1 < perguntas.length){
-        //     alteraEtapa(etapa + 1)
-        // }else{
-        //     alteraTela(<Final alteraTela={alteraTela}/>)
-        // }
+        setTimeout(() => {
+            document.getElementById(i).classList.remove("RespostaCerta")
+            
+
+            if(etapa + 1 < perguntas[i].length){
+                alteraEtapa(etapa + 1)
+            }else{
+                alteraTela(<Final alteraTela={alteraTela}/>)
+            }
+
+        }, 100);
+
     }
 
 
@@ -213,13 +224,8 @@ const Quiz = (props) => {
             <h1> {perguntaAtual.pergunta} </h1>
             <ul>
                 {
-<<<<<<< Updated upstream
                     perguntaAtual.respostas.map((resposta, i) => {
-                        return <li onClick={() => verificaResposta(i)}> {resposta} </li>
-=======
-                    perguntas[etapa].respostas.map((resposta, i) => {
                         return <li id={i} onClick={() => verificaResposta(i)}> {resposta} </li>
->>>>>>> Stashed changes
                     })
                 }
             </ul>
