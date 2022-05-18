@@ -2,6 +2,8 @@ import Jogos from "./Jogos";
 
 const Final = (props) => {
 
+
+
     const alteraTela = props.alteraTela
 
     return ( 

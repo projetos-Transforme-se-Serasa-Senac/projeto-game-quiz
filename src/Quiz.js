@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 
-
 import Final from "./Final";
+
 
 const Quiz = (props) => {
 
     require('./css/estilo-quiz.css')
+
+    document.body.style.backgroundImage = 'url("https://i.imgur.com/0f26KxN.jpg")'
 
     const alteraTela = props.alteraTela
 

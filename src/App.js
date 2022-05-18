@@ -5,6 +5,8 @@ import Jogos from "./Jogos";
 
 function App() {
 
+  document.body.style.backgroundImage = 'none'
+
   const [tela, alteraTela] = useState(null);
 
   if (tela == null){
