@@ -52,7 +52,7 @@ const Jogos = (props) => {
                         <image>{jogos.img}</image>
                         <p>{jogos.nome}</p>
                         <p>{jogos.desc}</p>
-                        <button onClick={() => alteraTela(<Quiz alteraTela={alteraTela}/>)}>Jogar</button>
+                        <button onClick={() => alteraTela(<Quiz alteraTela={alteraTela} jogoEscolhido={jogos.id}/>)}>Jogar</button>
                     </div>
                 );
             })}
