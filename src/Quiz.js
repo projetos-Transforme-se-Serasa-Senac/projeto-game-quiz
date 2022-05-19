@@ -210,7 +210,7 @@ const Quiz = (props) => {
             if(etapa + 1 < perguntas[i].length){
                 alteraEtapa(etapa + 1)
             }else{
-                alteraTela(<Final alteraTela={alteraTela}/>)
+                alteraTela(<Final alteraTela={alteraTela} pontos={pontos} />)
             }
 
         }, 1000);
