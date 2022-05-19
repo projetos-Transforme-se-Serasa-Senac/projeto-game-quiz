@@ -189,6 +189,8 @@ const Quiz = (props) => {
 
     ];
 
+    const coresBotao = ['vermelho', 'roxo', 'azul', 'verde']
+
     const perguntaAtual = perguntas[jogoEscolhido][etapa]
 
     const verificaResposta = (i) => {
@@ -211,21 +213,23 @@ const Quiz = (props) => {
                 alteraTela(<Final alteraTela={alteraTela}/>)
             }
 
-        }, 100);
+        }, 1000);
 
     }
 
 
     return ( 
-        <div>
+        <div className='box'>
 
             <p> Você tem <strong> {pontos} </strong></p>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"/>
            
             <h1> {perguntaAtual.pergunta} </h1>
             <ul>
                 {
                     perguntaAtual.respostas.map((resposta, i) => {
-                        return <li id={i} onClick={() => verificaResposta(i)}> {resposta} </li>
+                        return <li className={coresBotao[i]} id={i} onClick={() => verificaResposta(i)}> {resposta} </li>
                     })
                 }
             </ul>
