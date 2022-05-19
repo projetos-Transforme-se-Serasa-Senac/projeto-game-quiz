@@ -12,12 +12,12 @@ const Final = (props) => {
     const alteraTela = props.alteraTela
 
     return ( 
-        <div>
+        <div className="box">
             <h1> Parabéns</h1>
-            <p> Você terminou o Quiz</p>
+            <p> Você é um jogador de milhões</p>
             <p> Sua pontuação foi de:  {pontos} </p>
 
-            <button onClick={ () => alteraTela(<Jogos alteraTela={props.alteraTela}/>)}> Recomeçar </button>
+            <button className="" onClick={ () => alteraTela(<Jogos alteraTela={props.alteraTela}/>)}> Jogar Novamente </button>
         </div>
      );
 }
