@@ -87,3 +87,8 @@ width: 50px;
    pointer-events: none;
 
 }
+
+.RespostaIncorreta{
+    background-color: #D91A2A !important;
+    pointer-events: none;
+}

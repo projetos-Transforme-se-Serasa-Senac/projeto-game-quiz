@@ -201,11 +201,13 @@ const Quiz = (props) => {
             { localStorage.setItem("pontos", pontos+5 ) }
             document.getElementById(i).classList.add("RespostaCerta")
             alteraPontos(pontos + 5)
+        }else{
+            document.getElementById(i).classList.add("RespostaIncorreta")
         }
         
         setTimeout(() => {
             document.getElementById(i).classList.remove("RespostaCerta")
-            
+            document.getElementById(i).classList.remove("RespostaIncorreta")
 
             if(etapa + 1 < perguntas[i].length){
                 alteraEtapa(etapa + 1)
@@ -213,7 +215,7 @@ const Quiz = (props) => {
                 alteraTela(<Final alteraTela={alteraTela}/>)
             }
 
-        }, 1000);
+        }, 300);
 
     }
 
