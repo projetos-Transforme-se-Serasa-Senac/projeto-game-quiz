@@ -2,7 +2,8 @@ import Jogos from "./Jogos";
 
 const Final = (props) => {
 
-    const pontos = props.pontos
+    const certa= props.certa;
+    const pontos = props.pontos + ( certa ? 5 : 0 )
 
     const alteraTela = props.alteraTela
 
@@ -11,7 +12,7 @@ const Final = (props) => {
             <h1> Parabéns</h1>
             <p> Você terminou o Quiz</p>
             <p> Sua pontuação foi de:  {pontos} </p>
-            
+
             <button onClick={ () => alteraTela(<Jogos alteraTela={props.alteraTela}/>)}> Recomeçar </button>
         </div>
      );
