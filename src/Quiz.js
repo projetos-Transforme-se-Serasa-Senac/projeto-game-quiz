@@ -88,26 +88,31 @@ const Quiz = (props) => {
 
         [
             {
+                img: 'https://i.imgur.com/mvaaC98.jpg',
                 pergunta: "Em qual temporada Chloé vê a face de lucifer pela primeira vez?",
                 respostas: ["4° temporada", "Ultima temporada" , "2° temporada", "3° temporada"],
                 correta: 3
             },
             {
+                img: 'https://i.imgur.com/jFuEVht.jpg',
                 pergunta: "Mazikeen é o que?",
                 respostas: ["Um anjo", "Uma demonia", "Uma monstra" , "Humana"],
                 correta: 1
             },
             {
+                img: 'https://i.imgur.com/4ntRiDV.jpg',
                 pergunta: "Qual o nome dado a lucifer quando ainda era anjo?",
                 respostas: ["Samuel" , "Miguel", "Samael" , "Daniel"],
                 correta: 2
             },
             {
+                img: 'https://i.imgur.com/7SwbkOq.jpg',
                 pergunta: "Qual o nome do irmão gemeo de lucifer?",
                 respostas: ["Miguel", "Amenadiel", "Daniel" , "Gabriel"],
                 correta: 0
             },
             {
+                img: 'https://i.imgur.com/OQCKFUN.jpg',
                 pergunta: "Quem é a mãe da mazekeen?",
                 respostas: ["Lilith" , "Charlotte", "Gamigin" , "Hécate"],
                 correta: 0
