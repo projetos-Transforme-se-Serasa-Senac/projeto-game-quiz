@@ -55,26 +55,31 @@ const Quiz = (props) => {
 
         [
            {
-            pergunta: "Ambrose é o que de Sabrina?",
-            respostas: ["Primo" , "Tio", "Melhor Amigo" , "Irmão"],
-            correta: 0
+                img: 'https://i.imgur.com/W9Al76G.jpg',
+                pergunta: "Ambrose é o que de Sabrina?",
+                respostas: ["Primo" , "Tio", "Melhor Amigo" , "Irmão"],
+                correta: 0
         },
         {
+            img: 'https://i.imgur.com/Qv9TkeZ.jpg',
             pergunta: "Qual Personagem é filha do padre BlackWood?",
             respostas: ["Dorcas", "Prudence" , "Sabrina" , "Agatha"],
             correta: 1
         },
         {
+            img: 'https://i.imgur.com/UIIcSp7.jpg',
             pergunta: "Em que ano a série foi lançada?",
             respostas: ["2016", "2019", "2018", "2017"],
             correta: 2
         },
         {
+            img: 'https://i.imgur.com/am8mtCx.jpg',
             pergunta: "Quantas temporadas tem a série?",
             respostas: ["2", "3", "5", "4"],
             correta: 3
         },
         {
+            img: 'https://i.imgur.com/teSOGBn.jpg',
             pergunta: "Qual o nome da atris que interpreta a personagem pricipal?",
             respostas: ["Lucy Davis", "Miranda Otto", "Abigail Owen" , "Kiernan Shipka" ],
             correta: 3
@@ -112,26 +117,31 @@ const Quiz = (props) => {
         [
 
             {
+                img: 'https://i.imgur.com/EO07GBL.jpg',
                 pergunta: "Em que ano foi lançado o primeiro filme do Homem de Ferro?",
                 respostas: ["2013", "2015", "2008", "2012"],
                 correta: 2
             },
             {
+                img: 'https://i.imgur.com/XJ68MP2.jpg',
                 pergunta: "Em qual monumento Peter Parker salva seus colegas em Homem Aranha: De volta ao Lar?",
                 respostas: ["Cristo Redentor", "Torre Eiffel" ,"Big Ben" , "Monumento de Washington"],
                 correta: 3
             },
             {
+                img: 'https://i.imgur.com/acirYW0.png',
                 pergunta: "Quantas jóias do infinito existem?",
                 respostas: ["5", "6", "4", "8"],
                 correta: 1
             },
             {
+                img: 'https://i.imgur.com/lqP8oG0.jpg',
                 pergunta: "A Viúva negra é originalmente de qual país?",
                 respostas: ["Rússia", "Filipinas", "França", "Eslováquia"],
                 correta: 0
             },
             {
+                img: 'https://i.imgur.com/PTJFoo6.jpg',
                 pergunta: "Como Nick Fury perdeu o olho?",
                 respostas: ["Luta contra o Homem de Ferro" , "Em uma batalha de quando era jovem" , "Arranhão de um gato", "Caiu de um prédio quando criança"],
                 correta: 2
