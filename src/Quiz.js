@@ -22,26 +22,31 @@ const Quiz = (props) => {
     const perguntas = [
         [
             {
+                img: 'https:i.imgur.com/T31K8M5.jpg',
                 pergunta: "Quantos anos Edward tem nos filmes?",
                 respostas: ["109", "104", "113", "102"],
                 correta: 1
             },
             {
+                img: 'https://i.imgur.com/dMUKmDT.jpg',
                 pergunta: "Quem foi o verdadeiro amor de Victoria?",
                 respostas: ["Riley", "Edward", "James", "Felix"],
                 correta: 2
             },
             {
+                img: 'https://i.imgur.com/C1iU1gg.jpg',
                 pergunta: "Em qual filme Jacob beija Bella pela primeira vez?",
                 respostas: ["Amanhecer parte 1", "Amanhecer parte 2", "Eclipse", "Lua nova"],
                 correta: 2
             },
             {
+                img: 'https://i.imgur.com/16BJilk.png',
                 pergunta: "Por qual motivo Rosalie não se dava bem com a Bella no começo?",
                 respostas: ["Inveja, por bella desperdiçar sua vida humana" , "Gostava do edward" , "Por conta de uma briga", "Todas as alternativas"],
                 correta: 0
             },
             {
+                img: 'https://i.imgur.com/sgyjhwW.jpg',
                 pergunta: "Qual é o nome da Bella completo?",
                 respostas: ["Bella Swan" , "Bella Cullen" , "Isabella Marie Swan" ,"Isabella Swan"],
                 correta: 2
