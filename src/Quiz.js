@@ -22,7 +22,7 @@ const Quiz = (props) => {
     const perguntas = [
         [
             {
-                img: 'https:i.imgur.com/T31K8M5.jpg',
+                img: 'https://i.imgur.com/T31K8M5.jpg',
                 pergunta: "Quantos anos Edward tem nos filmes?",
                 respostas: ["109", "104", "113", "102"],
                 correta: 1
@@ -59,31 +59,31 @@ const Quiz = (props) => {
                 pergunta: "Ambrose é o que de Sabrina?",
                 respostas: ["Primo" , "Tio", "Melhor Amigo" , "Irmão"],
                 correta: 0
-        },
-        {
-            img: 'https://i.imgur.com/Qv9TkeZ.jpg',
-            pergunta: "Qual Personagem é filha do padre BlackWood?",
-            respostas: ["Dorcas", "Prudence" , "Sabrina" , "Agatha"],
-            correta: 1
-        },
-        {
-            img: 'https://i.imgur.com/UIIcSp7.jpg',
-            pergunta: "Em que ano a série foi lançada?",
-            respostas: ["2016", "2019", "2018", "2017"],
-            correta: 2
-        },
-        {
-            img: 'https://i.imgur.com/am8mtCx.jpg',
-            pergunta: "Quantas temporadas tem a série?",
-            respostas: ["2", "3", "5", "4"],
-            correta: 3
-        },
-        {
-            img: 'https://i.imgur.com/teSOGBn.jpg',
-            pergunta: "Qual o nome da atris que interpreta a personagem pricipal?",
-            respostas: ["Lucy Davis", "Miranda Otto", "Abigail Owen" , "Kiernan Shipka" ],
-            correta: 3
-        } 
+            },
+            {
+                img: 'https://i.imgur.com/Qv9TkeZ.jpg',
+                pergunta: "Qual Personagem é filha do padre BlackWood?",
+                respostas: ["Dorcas", "Prudence" , "Sabrina" , "Agatha"],
+                correta: 1
+            },
+            {
+                img: 'https://i.imgur.com/UIIcSp7.jpg',
+                pergunta: "Em que ano a série foi lançada?",
+                respostas: ["2016", "2019", "2018", "2017"],
+                correta: 2
+            },
+            {
+                img: 'https://i.imgur.com/am8mtCx.jpg',
+                pergunta: "Quantas temporadas tem a série?",
+                respostas: ["2", "3", "5", "4"],
+                correta: 3
+            },
+            {
+                img: 'https://i.imgur.com/teSOGBn.jpg',
+                pergunta: "Qual o nome da atris que interpreta a personagem pricipal?",
+                respostas: ["Lucy Davis", "Miranda Otto", "Abigail Owen" , "Kiernan Shipka" ],
+                correta: 3
+            } 
         ],
 
         [
@@ -155,26 +155,31 @@ const Quiz = (props) => {
 
         [
             {
+                img: 'https://i.imgur.com/nSsAMNZ.jpg',
                 pergunta: "Com qual desses artistas a Anitta nunca teve um affair?",
                 respostas: ["Neymar" , "Zac Efron" ," Shawn Mendes" , "Maluma"],
                 correta: 2
             },
             {
+                img: 'https://i.imgur.com/Tw04COQ.jpg',
                 pergunta: "Em qual ano rolou a polêmica entre Luísa Sonsa e Whindersson Nunes?",
                 respostas: ["2020" , "2021" , "2018" , "2019"],
                 correta: 0
             },
             {
+                img: 'https://i.imgur.com/6R3WknL.png',
                 pergunta: "Qual desse participantes do BB22 foi expulso por agressão?",
                 respostas: ["Eliezer" , "Natalia" , "Luciano" , "Maria"],
                 correta: 3
             },
             {
+                img: 'https://i.imgur.com/1r3qsC0.jpg',
                 pergunta: "Qual foi o participante do BBB que teve o maior índice de rejeição ?",
                 respostas: ["Felipe Prior" , "Viih Tube" , "Karol Conka" , "Nego Di"],
                 correta: 2
             },
             {
+                img: 'https://i.imgur.com/wQzryTi.png',
                 pergunta: "Quantas traições de Arthur Aguiar foram confirmadas?",
                 respostas: ["17" , "13" , "14" , "16"],
                 correta: 3
