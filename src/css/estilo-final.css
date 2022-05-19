@@ -19,5 +19,15 @@ body{
     font-family: 'Akshar', sans-serif;
     position:static ;
     margin-top: 200px; 
-    
+    text-align: center;
+}
+
+.box button{
+    background: none;
+    border: 1px solid white;
+    box-shadow: 3px 2px 8px 3px #F76CD1;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    font-family: 'Akshar', sans-serif;
 }
