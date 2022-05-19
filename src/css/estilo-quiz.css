@@ -37,7 +37,7 @@ body{
     padding: 8px;
     margin: 10px;
     margin-left: -30px;
-
+    cursor: pointer;
 }
 
 
@@ -84,5 +84,12 @@ body{
 width: 50px;
 }
 .RespostaCerta{
-   background-color: #04D94F;  
+   background-color: #04D94F !important;  
+   pointer-events: none;
+
+}
+
+.RespostaIncorreta{
+    background-color: #D91A2A !important;
+    pointer-events: none;
 }
