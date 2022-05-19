@@ -197,8 +197,9 @@ const Quiz = (props) => {
         
 
         const resposta_correta = perguntaAtual.correta;
+        const certa = resposta_correta == i;
         if(resposta_correta == i){
-            { localStorage.setItem("pontos", pontos+5 ) }
+            //{ localStorage.setItem("pontos", pontos+5 ) }
             document.getElementById(i).classList.add("RespostaCerta")
             alteraPontos(pontos + 5)
         }else{
@@ -212,7 +213,7 @@ const Quiz = (props) => {
             if(etapa + 1 < perguntas[i].length){
                 alteraEtapa(etapa + 1)
             }else{
-                alteraTela(<Final alteraTela={alteraTela} pontos={pontos} />)
+                alteraTela(<Final alteraTela={alteraTela} pontos={pontos} certa = {certa} />)
             }
 
         }, 300);
