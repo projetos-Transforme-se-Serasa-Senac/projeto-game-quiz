@@ -7,7 +7,7 @@ const Quiz = (props) => {
 
     require('./css/estilo-quiz.css')
 
-    document.body.style.backgroundImage = 'url("https://i.imgur.com/0f26KxN.jpg")'
+    document.body.style.backgroundImage = 'url("https://i.imgur.com/NgmnuMC.gif")'
 
     const alteraTela = props.alteraTela
 
@@ -16,6 +16,8 @@ const Quiz = (props) => {
     const [ etapa, alteraEtapa] = useState(0)
 
     const [pontos, alteraPontos] = useState(0)
+
+
 
     const perguntas = [
         [
@@ -161,7 +163,7 @@ const Quiz = (props) => {
 
         [
             {
-                img: 'https://i.imgur.com/fy02fSC.jpg',
+                img: 'https://i.imgur.com/HGhZhhx.jpg',
                 pergunta: "No filme O Náufrago, qual é o nome dado pelo personagem à bola de vôlei que encontrou na ilha?",
                 respostas: ["Wilson" , "Johnny" , "Sally" , "Juliet"],
                 correta: 0
@@ -232,7 +234,7 @@ const Quiz = (props) => {
 
             <p> Você tem <strong> {pontos} </strong></p>
 
-            <img src={perguntaAtual.pergunta}/>
+            <img src={perguntaAtual.img}/>
            
             <h1> {perguntaAtual.pergunta} </h1>
             <ul>

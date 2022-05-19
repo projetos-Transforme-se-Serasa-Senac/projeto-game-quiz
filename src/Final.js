@@ -2,6 +2,10 @@ import Jogos from "./Jogos";
 
 const Final = (props) => {
 
+    require("./css/estilo-final.css")
+
+    document.body.style.backgroundImage = 'url("https://i.imgur.com/Sff4bNy.gif")'
+
     const certa= props.certa;
     const pontos = props.pontos + ( certa ? 5 : 0 )
 

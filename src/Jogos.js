@@ -7,6 +7,8 @@ const Jogos = (props) => {
 
     const alteraTela = props.alteraTela;
 
+    document.body.style.backgroundImage = 'url("https://i.imgur.com/DLAMUKU.jpg")'
+
     const jogos = [
         {
             id: 0,
@@ -62,7 +64,7 @@ const Jogos = (props) => {
 
         <div>
             <div className="menu">
-                <img src="https://i.imgur.com/kcf4CxO.png" /> 
+                <img src="https://i.imgur.com/5dpskCq.png" /> 
             </div>
             <div class="categorias">
                 <a href="url" class="rosa">Séries</a>
