@@ -7,7 +7,7 @@ const Quiz = (props) => {
 
     require('./css/estilo-quiz.css')
 
-    document.body.style.backgroundImage = 'url("https://i.imgur.com/0f26KxN.jpg")'
+    document.body.style.backgroundImage = 'url("https://i.imgur.com/NgmnuMC.gif")'
 
     const alteraTela = props.alteraTela
 
@@ -16,6 +16,8 @@ const Quiz = (props) => {
     const [ etapa, alteraEtapa] = useState(0)
 
     const [pontos, alteraPontos] = useState(0)
+
+
 
     const perguntas = [
         [
@@ -161,26 +163,31 @@ const Quiz = (props) => {
 
         [
             {
+                img: 'https://i.imgur.com/HGhZhhx.jpg',
                 pergunta: "No filme O Náufrago, qual é o nome dado pelo personagem à bola de vôlei que encontrou na ilha?",
                 respostas: ["Wilson" , "Johnny" , "Sally" , "Juliet"],
                 correta: 0
             },
             {
+                img: 'https://i.imgur.com/09GPchC.jpg',
                 pergunta: "Qual a última vez que a Seleção Brasileira chegou a uma final de copa do mundo?",
                 respostas: [" 2002" , "2006" , "2010" , "2014"],
                 correta: 0
             },
             {
+                img: 'https://i.imgur.com/k8FC9AD.png',
                 pergunta: "Qual destas doenças tem como sintomas Febre Hemorrágica?",
                 respostas: ["Febre Amarela" , "Todas alternativas" , "Leptospirose" , "Ebola"],
                 correta: 1
             },
             {
-                pergunta: " Qual animal simboliza o pecado?",
+                img: 'https://i.imgur.com/KqvgicO.jpg',
+                pergunta: "Qual animal simboliza o pecado?",
                 respostas: ["Gato" , "Serpente" , "Cachorro" , "Veado"],
                 correta: 1
             },
             {
+                img: 'https://i.imgur.com/OpfHHON.png',
                 pergunta: "Onde se localiza a cidade de Hollywood?",
                 respostas: ["Flórida" , "Texas" , "Califórnia" , "Los Angeles"],
                 correta: 2
@@ -191,14 +198,16 @@ const Quiz = (props) => {
 
     const coresBotao = ['vermelho', 'roxo', 'azul', 'verde']
 
+
     const perguntaAtual = perguntas[jogoEscolhido][etapa]
 
     const verificaResposta = (i) => {
         
 
         const resposta_correta = perguntaAtual.correta;
+        const certa = resposta_correta == i;
         if(resposta_correta == i){
-            { localStorage.setItem("pontos", pontos+5 ) }
+            //{ localStorage.setItem("pontos", pontos+5 ) }
             document.getElementById(i).classList.add("RespostaCerta")
             alteraPontos(pontos + 5)
         }else{
@@ -212,7 +221,7 @@ const Quiz = (props) => {
             if(etapa + 1 < perguntas[i].length){
                 alteraEtapa(etapa + 1)
             }else{
-                alteraTela(<Final alteraTela={alteraTela} pontos={pontos} />)
+                alteraTela(<Final alteraTela={alteraTela} pontos={pontos} certa = {certa} />)
             }
 
         }, 300);
@@ -225,7 +234,7 @@ const Quiz = (props) => {
 
             <p> Você tem <strong> {pontos} </strong></p>
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"/>
+            <img src={perguntaAtual.img}/>
            
             <h1> {perguntaAtual.pergunta} </h1>
             <ul>

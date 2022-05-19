@@ -2,7 +2,7 @@
 /*#D4ACE0*/
 body{
 
-    background-image: url("https://i.imgur.com/NgmnuMC.gif");
+    /* background-image: url("https://i.imgur.com/NgmnuMC.gif") !important; */
     background-size: 1990px 970px ;
     font-family: 'Akshar', sans-serif;
     text-align: center;
@@ -29,7 +29,7 @@ body{
     border-radius: 5px;
 }
 .box img{
-    width: 100px;
+
     border-radius: 5px;
 }
 .box li{
@@ -80,9 +80,7 @@ body{
 .box .verde:hover{
     box-shadow:3px 2px 5px  #04D94F;
 }
-.img{
-width: 50px;
-}
+
 .RespostaCerta{
    background-color: #04D94F !important;  
    pointer-events: none;
