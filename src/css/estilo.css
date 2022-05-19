@@ -1,15 +1,14 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&display=swap');
+
+
 
 body{
-    background-image: url("https://i.imgur.com/lz8FXt7.gif");
-    background-size: 100px;
+    background-image: url("https://i.imgur.com/DLAMUKU.jpg");
     padding: 0px;
     margin: 0px;
-    /*font-family: 'Koulen', cursive;*/
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Akshar', sans-serif;
     text-align: center;
-    background: aliceblue;
+    background-size: 1900px 970px ;
 }
 .menu img{
     width: 200px;
@@ -19,6 +18,7 @@ body{
 .menu{
     font-family: 'Koulen', cursive;
     background: #9400D3;
+    box-shadow: 4px 5px 8px #CB18D0;
     padding: 0px;
     color: aliceblue; 
 }
@@ -29,6 +29,7 @@ body{
     /*font-family: 'Koulen', cursive;*/
     font-family: 'Oswald', sans-serif;
     background: #9400D3;
+    box-shadow: 4px 5px 8px 8px #CB18D0;
     padding: 40px;
     text-align: left;
     color: aliceblue;
@@ -104,10 +105,10 @@ body{
 .categorias .amarelo{
     text-decoration: none;
     border-radius: 10px;
-    border: 2px solid#FFA500;
+    border: 2px solid#006400;
     padding: 10px;
     color: white;
-    background:#FFD700;
+    background:#32CD32;
     padding: 9px;
     padding-left: 80px;
     padding-right: 80px;
@@ -116,7 +117,7 @@ body{
 
 }
 .categorias .amarelo:hover{
-    box-shadow:3px 2px 5px  #FFD700;
+    box-shadow:3px 2px 5px  #7CFC00;
 } 
 
 
@@ -237,6 +238,15 @@ body{
 .container .card .card-quiz.card-quiz2 .content a:hover{
     background: #333;
     color: #fff;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .container{
+        display: block;
+        width: 100%;
+    }
 }
 
 /*RODAPÉ*/
