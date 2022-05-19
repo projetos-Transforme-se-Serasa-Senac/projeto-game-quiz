@@ -3,7 +3,8 @@
 body{
     background-image: url("https://i.imgur.com/Sff4bNy.gif");
     background-size: 1900px 970px ;
-    font-family: 'Akshar', sans-serif;}
+    font-family: 'Akshar', sans-serif;
+}
 .box{
     background: #fff;
     background-size: 550px;
@@ -17,5 +18,16 @@ body{
     font-family: 'Akshar', sans-serif;
     position:static ;
     margin-top: 200px; 
+    text-align: center;
     
+}
+.box button{
+    background: none;
+    border: 1px solid white;
+    box-shadow: 3px 2px 8px 3px #F76CD1;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    font-family: 'Akshar', sans-serif;
+
 }
