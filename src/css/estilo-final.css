@@ -3,7 +3,9 @@
 body{
     /* background-image: url("https://i.imgur.com/Sff4bNy.gif") !important; */
     background-size: 1900px 970px ;
-    font-family: 'Akshar', sans-serif;}
+    font-family: 'Akshar', sans-serif;
+}
+
 .box{
     background: #fff;
     background-size: 550px;
